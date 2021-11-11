@@ -50,5 +50,6 @@ CREATE TABLE `sap-outbound-delivery-item-data`
     `StorageLocation`         varchar(4) DEFAULT NULL,
     `TransportationGroup`     varchar(4) DEFAULT NULL,
     PRIMARY KEY (`DeliveryDocument`, `DeliveryDocumentItem`),
+    CONSTRAINT `DeliveryDocument_fk` FOREIGN KEY (`DeliveryDocument`) REFERENCES `sap-outbound-delivery-header-data` (`DeliveryDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
