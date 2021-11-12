@@ -56,6 +56,6 @@ CREATE TABLE `sap-outbound-delivery-header-data`
     `TransportationGroup`     varchar(4) DEFAULT NULL,
     `TransportationPlanningDate` date DEFAULT NULL,
     `TransportationPlanningTime` time DEFAULT NULL,
-    PRIMARY KEY (`DeliveryDocument`),
+    PRIMARY KEY (`DeliveryDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
