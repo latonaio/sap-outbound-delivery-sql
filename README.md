@@ -13,10 +13,9 @@ https://api.sap.com/api/OP_API_OUTBOUND_DELIVERY_SRV_0002/overview
 
 sap-outbound-delivery-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* sap-outbound-delivery-sql-header-data.sql  
-* sap-outbound-delivery-sql-item-data.sql  
-* sap-outbound-delivery-sql-partner-address-data.sql  
-
+* sap-outbound-delivery-sql-header-data.sql（SAP 出荷伝票 - ヘッダデータ）  
+* sap-outbound-delivery-sql-item-data.sql（SAP 出荷伝票 - 明細データ）  
+* sap-outbound-delivery-sql-partner-address-data.sql（SAP 出荷伝票 - パートナ住所データ）  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
