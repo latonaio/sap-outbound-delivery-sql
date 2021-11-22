@@ -1,6 +1,7 @@
 CREATE TABLE `sap-outbound-delivery-header-data`
 (
     `DeliveryDocument`        varchar(10) DEFAULT NULL,
+    `DeliveryDocumentType`    varchar(4) DEFAULT NULL,
     `DocumentDate`            date DEFAULT NULL,
     `ActualGoodsMovementDate` date DEFAULT NULL,
     `ActualDeliveryRoute`     varchar(6) DEFAULT NULL,
@@ -16,7 +17,6 @@ CREATE TABLE `sap-outbound-delivery-header-data`
     `DeliveryBlockReason`     varchar(2) DEFAULT NULL,
     `DeliveryDate`            date DEFAULT NULL,
     `DeliveryDocumentBySupplier` varchar(35) DEFAULT NULL,
-    `DeliveryDocumentType`    varchar(4) DEFAULT NULL,
     `DeliveryIsInPlant`       varchar(1) DEFAULT NULL,
     `DeliveryPriority`        varchar(2) DEFAULT NULL,
     `DeliveryTime`            time DEFAULT NULL,
