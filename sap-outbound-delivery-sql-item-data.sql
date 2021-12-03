@@ -26,7 +26,7 @@ CREATE TABLE `sap-outbound-delivery-item-data`
     `ItemGrossWeight`         varchar(13) DEFAULT NULL,
     `ItemNetWeight`           varchar(13) DEFAULT NULL,
     `ItemWeightUnit`          varchar(3) DEFAULT NULL,
-    `ItemIsBillingRelevant`   tinyint(1) DEFAULT NULL,
+    `ItemIsBillingRelevant`   varchar(1) DEFAULT NULL,
     `ItemPackingIncompletionStatus` varchar(1) DEFAULT NULL,
     `ItemPickingIncompletionStatus` varchar(1) DEFAULT NULL,
     `ItemVolume`              varchar(13) DEFAULT NULL,
