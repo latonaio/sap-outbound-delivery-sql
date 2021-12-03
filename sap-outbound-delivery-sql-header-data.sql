@@ -27,7 +27,7 @@ CREATE TABLE `sap-outbound-delivery-header-data`
     `HeaderVolumeUnit`        varchar(3) DEFAULT NULL,
     `HeaderWeightUnit`        varchar(3) DEFAULT NULL,
     `IncotermsClassification` varchar(3) DEFAULT NULL,
-    `IsExportDelivery`        tinyint(1) DEFAULT NULL,
+    `IsExportDelivery`        varchar(1) DEFAULT NULL,
     `LastChangeDate`          date DEFAULT NULL,
     `LoadingDate`             date DEFAULT NULL,
     `LoadingPoint`            varchar(25) DEFAULT NULL,
