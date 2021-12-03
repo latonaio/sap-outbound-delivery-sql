@@ -12,9 +12,7 @@ CREATE TABLE `sap-outbound-delivery-partner-address-data`
     `CityName`                varchar(40) DEFAULT NULL,
     `PostalCode`              varchar(10) DEFAULT NULL,
     `CorrespondenceLanguage`  varchar(2) DEFAULT NULL,
-    `EmailAddress`            varchar(241) DEFAULT NULL,
     `FaxNumber`               varchar(30) DEFAULT NULL,
-    `MobilePhoneNumber`       varchar(30) DEFAULT NULL,
     `PhoneNumber`             varchar(30) DEFAULT NULL,
     PRIMARY KEY (`DeliveryDocument`, `PartnerFunction`),
     CONSTRAINT `DeliveryDocument_fk` FOREIGN KEY (`DeliveryDocument`) REFERENCES `sap-outbound-delivery-header-data` (`DeliveryDocument`)
