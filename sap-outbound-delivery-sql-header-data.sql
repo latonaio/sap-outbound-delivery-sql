@@ -5,8 +5,6 @@ CREATE TABLE `sap-outbound-delivery-header-data`
     `DocumentDate`            date DEFAULT NULL,
     `ActualGoodsMovementDate` date DEFAULT NULL,
     `ActualDeliveryRoute`     varchar(6) DEFAULT NULL,
-    `Shippinglocationtimezone` varchar(6) DEFAULT NULL,
-    `Receivinglocationtimezone` varchar(6) DEFAULT NULL,
     `ActualGoodsMovementTime` time DEFAULT NULL,
     `BillingDocumentDate`     date DEFAULT NULL,
     `CompleteDeliveryIsDefined` tinyint(1) DEFAULT NULL,
