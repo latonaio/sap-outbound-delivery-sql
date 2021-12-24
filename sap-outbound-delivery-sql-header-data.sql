@@ -1,6 +1,6 @@
 CREATE TABLE `sap-outbound-delivery-header-data`
 (
-    `DeliveryDocument`        varchar(10) DEFAULT NULL,
+    `DeliveryDocument`        varchar(10) NOT NULL,
     `DeliveryDocumentType`    varchar(4) DEFAULT NULL,
     `DocumentDate`            date DEFAULT NULL,
     `ActualGoodsMovementDate` date DEFAULT NULL,
