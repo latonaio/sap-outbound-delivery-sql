@@ -1,4 +1,4 @@
-CREATE TABLE `sap-outbound-delivery-partner-address-data`
+CREATE TABLE `sap_outbound_delivery_partner_address_data`
 (
     `DeliveryDocument`        varchar(10) NOT NULL,
     `PartnerFunction`         varchar(4) NOT NULL,
@@ -15,6 +15,6 @@ CREATE TABLE `sap-outbound-delivery-partner-address-data`
     `FaxNumber`               varchar(30) DEFAULT NULL,
     `PhoneNumber`             varchar(30) DEFAULT NULL,
     PRIMARY KEY (`DeliveryDocument`, `PartnerFunction`),
-    CONSTRAINT `DeliveryDocument_fk` FOREIGN KEY (`DeliveryDocument`) REFERENCES `sap-outbound-delivery-header-data` (`DeliveryDocument`)
+    CONSTRAINT `SAPOutboundDeliveryPartnerAddressData_fk` FOREIGN KEY (`DeliveryDocument`) REFERENCES `sap_outbound_delivery_header_data` (`DeliveryDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

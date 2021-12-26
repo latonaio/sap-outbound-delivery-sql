@@ -1,4 +1,4 @@
-CREATE TABLE `sap-outbound-delivery-item-data`
+CREATE TABLE `sap_outbound_delivery_item_data`
 (
     `DeliveryDocument`        varchar(10) NOT NULL,
     `DeliveryDocumentItem`    varchar(6) NOT NULL,
@@ -7,8 +7,8 @@ CREATE TABLE `sap-outbound-delivery-item-data`
     `Batch`                   varchar(10) DEFAULT NULL,
     `BatchBySupplier`         varchar(15) DEFAULT NULL,
     `CostCenter`              varchar(10) DEFAULT NULL,
-    `CreationDate`            date DEFAULT NULL,
-    `CreationTime`            time DEFAULT NULL,
+    `CreationDate`            varchar(80) DEFAULT NULL,
+    `CreationTime`            varchar(80) DEFAULT NULL,
     `DeliveryDocumentItemCategory` varchar(4) DEFAULT NULL,
     `DeliveryDocumentItemText` varchar(40) DEFAULT NULL,
     `DeliveryQuantityUnit`    varchar(13) DEFAULT NULL,
@@ -44,12 +44,12 @@ CREATE TABLE `sap-outbound-delivery-item-data`
     `PickingConfirmationStatus` varchar(1) DEFAULT NULL,
     `PickingStatus`           varchar(1) DEFAULT NULL,
     `Plant`                   varchar(4) DEFAULT NULL,
-    `ProductAvailabilityDate` date DEFAULT NULL,
-    `ProductAvailabilityTime` time DEFAULT NULL,
+    `ProductAvailabilityDate` varchar(80) DEFAULT NULL,
+    `ProductAvailabilityTime` varchar(80) DEFAULT NULL,
     `ProfitCenter`            varchar(10) DEFAULT NULL,
     `StorageLocation`         varchar(4) DEFAULT NULL,
     `TransportationGroup`     varchar(4) DEFAULT NULL,
     PRIMARY KEY (`DeliveryDocument`, `DeliveryDocumentItem`),
-    CONSTRAINT `DeliveryDocument_fk` FOREIGN KEY (`DeliveryDocument`) REFERENCES `sap-outbound-delivery-header-data` (`DeliveryDocument`)
+    CONSTRAINT `SAPOutboundDeliveryItemData_fk` FOREIGN KEY (`DeliveryDocument`) REFERENCES `sap_outbound_delivery_header_data` (`DeliveryDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
