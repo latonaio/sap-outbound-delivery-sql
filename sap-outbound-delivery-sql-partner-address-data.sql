@@ -12,7 +12,6 @@ CREATE TABLE `sap_outbound_delivery_partner_address_data`
     `PhoneNumber`             varchar(30) DEFAULT NULL,
     `SDDocument`              varchar(10) DEFAULT NULL,
     `SDDocumentItem`          varchar(6) DEFAULT NULL,
-    PRIMARY KEY (`AddressID`),
-    CONSTRAINT `SAPOutboundDeliveryPartnerAddressData_fk` FOREIGN KEY (`AddressID`) REFERENCES `sap_outbound_delivery_header_partner_data` (`AddressID`)
+    PRIMARY KEY (`AddressID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
