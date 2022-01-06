@@ -1,7 +1,7 @@
 CREATE TABLE `sap_outbound_delivery_partner_address_data`
 (
     `AddressID`               varchar(10) NOT NULL,
-    `BusinessPartnerName1`    varchar(10) DEFAULT NULL,
+    `BusinessPartnerName1`    varchar(40) DEFAULT NULL,
     `Country`                 varchar(3) DEFAULT NULL,
     `Region`                  varchar(3) DEFAULT NULL,
     `StreetName`              varchar(60) DEFAULT NULL,
