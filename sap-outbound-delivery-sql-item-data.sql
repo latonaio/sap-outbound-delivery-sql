@@ -11,7 +11,7 @@ CREATE TABLE `sap_outbound_delivery_item_data`
     `CreationTime`                    varchar(80) DEFAULT NULL,
     `DeliveryDocumentItemCategory`    varchar(4) DEFAULT NULL,
     `DeliveryDocumentItemText`        varchar(40) DEFAULT NULL,
-    `DeliveryQuantityUnit`            varchar(13) DEFAULT NULL,
+    `DeliveryQuantityUnit`            varchar(3) DEFAULT NULL,
     `DistributionChannel`             varchar(2) DEFAULT NULL,
     `Division`                        varchar(2) DEFAULT NULL,
     `GLAccount`                       varchar(10) DEFAULT NULL,
